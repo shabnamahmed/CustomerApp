@@ -1,0 +1,140 @@
+<div class=" h3  p-3 bg-white "> <span class="ps-2">Profile</span></div>
+<div class="container-fluid scrollbar" style="max-height: 60vh;">
+    <div class="card">
+        <form [formGroup]="form"  (ngSubmit)="submit()">
+            <div class="row">
+                <div class="col p-3">
+                    <img src="https://images.pexels.com/photos/1886694/pexels-photo-1886694.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class=" rounded-circle shadow ms-2" alt="...">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="form-group mb-2">
+                            <span class="ps-2 ms-1">Sur Name</span>
+                            <input type="text" class="form-control  my-1 align-left"
+                                id="surName" name="surName" formControlName="surName" aria-describedby="emailHelp"
+                                placeholder="Kay" [(ngModel)]="customer.surName"  required>
+                                <div *ngIf="f.surName.touched && f.surName.invalid" class="mt-2 text-danger">
+                                    <div *ngIf="f.surName.errors?.required">Sur Name is required.</div>
+                        
+                                  </div>
+                        </div>
+                        <div class="form-group mt-2">
+                            <span class="ps-2 ms-1">First Name</span>
+                            <input type="text" class="form-control  my-1  align-left"
+                                id="firstName" name="firstName" formControlName="firstName" aria-describedby="emailHelp"
+                                placeholder="Cambray" [(ngModel)]="customer.firstName"  required>
+                                <div *ngIf="f.firstName.touched && f.firstName.invalid" class="mt-2 text-danger">
+                                    <div *ngIf="f.firstName.errors?.required">First Name is required.</div>
+                        
+                                  </div>  </div>
+                    </div>
+                </div>
+                <!-- <div class="scrollbar scrollbar-info" style="max-height:30vh"> -->
+                <div class="row">
+                    <div class="form-group mb-3">
+                        <span class="ps-2 ">Username</span>
+                        <fieldset disabled>
+                            <input type="text" class="form-control   my-1 align-left" id="username"
+                                name="username" formControlName="username" aria-describedby="emailHelp"
+                                placeholder="Kay.cambray111"
+                                >
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group mb-3">
+                        <span class="ps-2 ">Email</span>
+                        <input type="email" class="form-control  my-1 align-left" id="email"
+                            name="email" formControlName="email" aria-describedby="emailHelp"
+                            placeholder="cambay.kay@gmail.com" [(ngModel)]="customer.email"  required>
+                            <div *ngIf="f.email.touched && f.email.invalid" class="mt-2 text-danger">
+                                <div *ngIf="f.email.errors?.required">Email is required.</div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group mb-3">
+                        <span class="ps-2 ">Phone</span>
+                        <input type="text" class="form-control  my-1 align-left" id="phone"
+                            name="phone" formControlName="phone" aria-describedby="emailHelp"
+                            placeholder="+49 547895478" [(ngModel)]="customer.phone"  required>
+                            <div *ngIf="f.phone.touched && f.email.invalid" class="mt-2 text-danger">
+                                <div *ngIf="f.phone.errors?.required">Phone No is required.</div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group mb-3">
+                        <span class="ps-2">Password</span>
+                        <input type="password" class="form-control  my-1 align-left"
+                            id="password" name="password" formControlName="password" 
+                            placeholder=" ............" [(ngModel)]="customer.password"  required>
+                            <div *ngIf="f.password.touched && f.password.invalid" class="mt-2 text-danger">
+                                <div *ngIf="f.password.errors?.required">Password is required.</div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group mb-3">
+                        <span class="ps-2 ">Address</span>
+                        <input type="text" class="form-control   my-1 align-left" id="address"
+                            name="address" formControlName="address" aria-describedby="emailHelp"
+                            placeholder="87/111, Gasper Road" [(ngModel)]="customer.address"  required>
+                            <div *ngIf="f.address.touched && f.password.invalid" class="mt-2 text-danger">
+                                <div *ngIf="f.address.errors?.required">Address is required.</div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group mb-3">
+                        <span class="ps-2 ">Street</span>
+                        <input type="text" class="form-control   my-1 align-left" id="street"
+                            name="street" formControlName="street" aria-describedby="emailHelp"
+                            placeholder="Gunther Street" [(ngModel)]="customer.street"  required>
+                            <div *ngIf="f.street.touched && f.street.invalid" class="mt-2 text-danger">
+                                <div *ngIf="f.street.errors?.required">Street is required.</div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group mb-3">
+                            <span class="ps-2 ">City</span>
+                            <input type="text" class="form-control   my-1 align-left" id="city"
+                                name="city" formControlName="city" aria-describedby="emailHelp" 
+                                placeholder="Berlin" [(ngModel)]="customer.city"  required>
+                                <div *ngIf="f.city.touched && f.city.invalid" class="mt-2 text-danger">
+                                    <div *ngIf="f.city.errors?.required">City is required.</div></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group mb-3">
+                            <span class="ps-2">ZipCode</span>
+                            <input type="text" class="form-control   my-1 align-left"
+                                id="zipcode" name="zipcode" formControlName="zipcode" aria-describedby="emailHelp"
+                                placeholder="111222" [(ngModel)]="customer.zipcode"  required>
+                                <div *ngIf="f.zipcode.touched && f.zipcode.invalid" class="mt-2 text-danger">
+                                    <div *ngIf="f.zipcode.errors?.required">Zipcode is required.</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group mb-3">
+                        <span class="ps-2 ">Country</span>
+                        <input type="text" class="form-control   my-1 align-left" id="country"
+                            name="country" formControlName="country" aria-describedby="emailHelp" 
+                            placeholder="Germany" [(ngModel)]="customer.country"  required>
+                            <div *ngIf="f.country.touched && f.country.invalid" class="mt-2 text-danger">
+                                <div *ngIf="f.country.errors?.required">Country is required.</div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="fs-3 text-decoration-none btn btn-checkout pb-2 w-100 " type="submit">
+                            Save</button>
+                    </div>
+                    <div class="col">
+                        <button class="fs-3 text-decoration-none btn btn-checkout pb-2  w-100" type="reset">
+                            Cancel</button>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </form>  </div>
+   
+</div>

@@ -1,0 +1,39 @@
+<app-image-component></app-image-component>
+<div class="container bg-light">
+    <div class="col d-flex justify-content-center mb-3">
+      <div class="card p-3 shadow mx-2">
+        <div class="card-title h3 text-bold text-center pt-3">
+        <strong> Welcome to Pay2Goo </strong>
+        </div>
+        <p id="emailHelp" class="form-text text-center h6 text-muted">Please Sign in to continue</p>
+        <div class="card-body" >
+          <form [formGroup]="form"  (ngSubmit)="submit()">
+            <div class="form-group">
+             <span class="ps-2 ms-1">Email Or UserName</span>
+              <input type="text" class="form-control border-bottom  border-0  align-left" id="username" name="username"
+                formControlName="username" aria-describedby="emailHelp" placeholder="John Prosser">
+            </div>
+            
+            <div class="form-group my-3">
+              <span class="ps-2 ms-1">Password</span>
+              <input type="password" class="form-control border-bottom  border-0 align-left" id="password" name="password"
+                formControlName="password" placeholder=" ............">
+            </div>
+
+            <button class="fs-3 text-decoration-none btn btn-checkout pb-2  w-100" type="submit"  > Sign
+              In</button>
+              <div class="alert alert-danger alert-dismissible fade show  mt-3" role="alert" *ngIf="error">
+                <strong>{{msg}}</strong> 
+                <button type="button" class="btn-close me-1 text-danger" data-bs-dismiss="alert" aria-label="Close" (click)="close()"></button>
+              </div>
+            <div class="text-center ">
+              <p class="row mt-2"> <a routerLink="/forgotPassword" class="text fs-6">Forgot Password?</a></p>
+              <p class="row my-2"> <a class="fs-2 text-decoration-none heading " routerLink="/signUp"><strong>Sign Up</strong></a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+  </div>
+</div>

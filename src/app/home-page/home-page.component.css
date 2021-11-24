@@ -1,0 +1,170 @@
+
+.bg-dark
+{
+  opacity:0.9;
+}
+a
+{
+  color:white;
+  }
+  li.col
+  {
+    vertical-align:top;
+    line-height: 0.9rem;;
+  }
+small{
+   /* margin-top:0.2rem;  */
+   font-size:1.5rem;
+   
+}
+[class^="bi-"]::before, [class*=" bi-"]::before {
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.active
+{
+  background: #099CFF ;
+  border-radius: 0.4rem; 
+  list-style: none;
+  /* margin-bottom:1.rem;  */
+  margin-top:0.9rem; 
+
+  
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed; 
+  opacity:0.65;
+}
+.logo
+{
+  font-size:3rem;
+  line-height: 2rem;;
+}
+footer{
+  height:5.4rem;
+}
+span.text-white
+{
+  font-size:0.6rem;
+  line-height: 1.3rem;
+}
+.innerContent
+{
+  height:85vh;
+  background-color: lightgray;
+}
+
+@media  screen and (min-width:280px)  {
+  footer.row {
+   --bs-gutter-x: 0rem;
+  }
+
+ 
+  footer.px-4 {
+    padding-right: 0.4rem !important;
+    padding-left: 0.4rem !important;
+  }
+  }  
+@media screen and(min-height:1024px)
+{
+  .innerContent
+{
+  height:86vh;
+  background-color: lightgray;
+}
+}
+
+/* for iPhone devices*/
+
+/* 2340x1080 pixels at 476ppi */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+     }
+
+     /* 2532x1170 pixels at 460ppi */
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) {
+  .card
+  {
+    max-height:88vh;
+  }
+ }
+
+/* 2778x1284 pixels at 458ppi */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { }
+
+    @supports (-webkit-touch-callout: none) {
+      a
+{
+  color:white;
+  list-style: none;
+  margin-bottom:2.3rem; 
+  margin-top:1.2rem; 
+  
+}
+   }
+
+   @media screen and (min-width:360px)
+{
+    .card {
+        top:13rem;
+        font-size: 1rem;
+        max-height: 68vh;
+    }  
+    a{
+        font-size:0.5rem;
+    }
+    
+    img{
+        height:4.4rem;
+        width:4.4rem;
+    }
+}
+@media only screen 
+    and (min-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        .card {
+            top:10rem;
+            max-height:90vh;
+        }  
+     }
+     @media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) {
+  /* .card
+  {
+    bottom:1rem;
+  } */
+ }
+
+ @media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { }
+@media screen and (min-width:540px)
+{
+    .card {
+        top:12rem;
+        height:63vh;
+    }  
+}
+
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { }
+
+   

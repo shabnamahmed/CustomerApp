@@ -1,0 +1,45 @@
+<app-image-component></app-image-component>
+<div class="container bg-light">
+  <div class="col d-flex  align-items-center">
+      <div class="card p-3  shadow mb-5 ms-2">
+        <div class="card-title h3 text-bold text-center pt-2">
+          <strong>Welcome to Pay2Goo</strong>  
+          
+        </div>
+        <p id="emailHelp" class="form-text text-center h6 text-muted">Please Sign up to continue</p>
+        <div class="card-body">
+          <form [formGroup]="form"  (ngSubmit)="submit()">
+            <div class="form-group mt-3">
+         <span class="ps-2 ms-1">UserName</span>
+              <input type="text" class="form-control border-bottom  border-0 align-left" id="username" name="username"
+                formControlName="username" aria-describedby="emailHelp" placeholder="John Prosser">
+            </div>
+            <div class="form-group my-3">
+      <span class="ps-2 ms-1">Email</span>
+              <input type="text" class="form-control border-bottom  border-0 align-left" id="email" name="email"
+                formControlName="email" aria-describedby="emailHelp" placeholder="John Prosser">
+            </div>
+            <div class="form-group my-3">
+              <label for="exampleInputPassword1"><span class="ps-2 ms-1">Password</span></label>
+              <input type="password" class="form-control border-bottom border-0" id="password" name="password"
+                formControlName="password" placeholder=" ............">
+            </div>
+
+            <button class="fs-2 text-decoration-none btn btn-small align-middle pb-2  w-100" type="submit"> Sign
+              up</button>
+
+       
+              <div>
+              <div class="text-center mt-2"> <a routerLink="/signUp" class="text fs-6">Already Have an account?</a></div>
+              <div class="text-center mt-2"> <a class="fs-2 text-decoration-none text-primary" routerLink="/login"><strong>Sign in</strong></a>
+              </div>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show  mt-2" role="alert" *ngIf="error">
+              <strong>{{msg}}</strong> 
+              <button type="button" class="btn-close me-1 text-danger" data-bs-dismiss="alert" aria-label="Close" (click)="close()"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

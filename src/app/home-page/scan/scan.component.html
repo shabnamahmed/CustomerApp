@@ -1,0 +1,15 @@
+<div class="container-fluid mb-3">
+    <div class="row bg-light text-center">
+ <p class="mt-3 h1">Scan QR Code</p>
+ <p class="h6">Point the camera steadily for 2-3 seconds towards the QR Code you want to scan</p>
+    </div>
+</div>
+
+
+<zxing-scanner (scanSuccess)="onCodeResult($event)"
+  style="max-height:50vh"
+ ></zxing-scanner >
+  <section class="results" *ngIf="qrResultString">
+  </section> 
+   
+  

@@ -1,0 +1,19 @@
+
+img{
+    height: 50vh;
+    opacity:0.9;
+    width:100%;
+    padding:0;
+    margin:0;
+    position: relative;
+	
+}
+/* @media screen and (max-width:320px)
+{
+    img {
+       
+        height:40vh;
+    }
+     
+} */
+

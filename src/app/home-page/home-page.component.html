@@ -1,0 +1,80 @@
+ <nav class="navbar fixed-tosmall bg-blue p-2">
+    <div class="container-fluid">
+      <div class=" mx-auto text-white logo">  
+        <i class="bi bi-flower3 "></i> 
+      </div>
+    </div>
+  </nav>
+  
+   <div class="innerContent bg-light"> 
+    
+    <router-outlet>
+  
+    </router-outlet> 
+   </div> 
+<footer class="fixed-bottom bg-dark px-3 row">
+    <li class="col mx-auto mb-5" routerLinkActive="active" 
+    [routerLinkActiveOptions]="{exact:true}">
+       <a class="row  text-center text-white  text-decoration-none py-1" 
+       routerLink='./dashboard'role="link">    
+       <small class="bi bi-bricks"></small>
+       <span class="text-white mx-auto">Dashboard</span>
+       </a>
+   
+     </li>
+    <li class="col mx-auto mb-5" routerLinkActive="active"
+     [routerLinkActiveOptions]="{exact:true}">
+     <a class="row  text-white text-center text-decoration-none py-1" 
+     routerLink="./scan" roll=link>    
+     <small class="bi bi-upc-scan"></small>
+     <span class="text-white mx-auto">Scan</span>
+     </a>
+   
+   </li>
+   
+   <li class="col mx-auto mb-5" routerLinkActive="active" 
+   [routerLinkActiveOptions]="{exact:true}">
+   <a class="row text-white text-center  text-decoration-none py-1" 
+   routerLink="./orders"  roll="link" [ngClass]="{'disabled': visit == false }">    
+   <small class="bi bi-basket mx-auto"></small>
+   <span class="text-white mx-auto">Orders</span>
+  </a>
+   
+   </li>
+
+   <li class="col mx-auto mb-5" routerLinkActive="active" 
+   [routerLinkActiveOptions]="{exact:true}">
+   <a class="row text-white text-center  text-decoration-none py-1" 
+   routerLink="./settings"  roll="link">    
+   <small class="bi bi-gear mx-auto"></small>
+   <span class="text-white mx-auto">Settings</span>
+  </a>
+   
+   </li>
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+<!-- </div>   -->
+  
+</footer>

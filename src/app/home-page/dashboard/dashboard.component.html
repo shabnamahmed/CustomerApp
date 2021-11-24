@@ -1,0 +1,43 @@
+<p class=" h3 shadow p-3 bg-white"> Dashboard</p>
+<div class="scrollbarDashboard">
+<div class="container  bg-light">
+ 
+    <div class="accordion " id="accordionContainer">
+          <div class="card my-2 shadow rounded" *ngFor="let info of monthInfo; let i = index; let exp of expenses">
+        <div class="bg-white  h4 px-3 py-1 rounded"   [id]="'heading' + i" 
+         data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + i" 
+         aria-expanded="true" [attr.aria-controls]="'collapse' + i"  >
+          <span class="float-start mt-2" >{{info.month | titlecase}} </span> 
+          <span class="float-end mt-2 price">{{info.amount}}  </span>
+        </div>
+       
+        <div class="scrollbar scrollbar-info">
+          <div [id]="'collapse' + i" class="accordion-collapse collapse " [ngClass]="{ 'show': i == 0 }"
+          [attr.aria-labelledby]="'heading' + i" data-bs-parent="#accordionContainer">
+            <div class="list-group-item  " *ngFor="let data of info.item">
+              <div class="row justify-content-between py-2 ">
+                <div class="col ">
+                  <span class="row  foodName">{{ restaurentName | titlecase}}</span>
+                  <span class="row  orderDate"> {{data.order.fromDateTime}} </span>
+                </div>
+                <div class="col-auto ">
+                  <span class="amount ">
+                    {{ data.order.amount | currency:'EUR'}} </span>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+      
+      </div>
+      <div class="card" *ngIf="!dashboard">
+        <div class="card-body">
+          <span class="float-start  h5">{{MonthName | titlecase}} </span> 
+          <span class="float-end  h5" >{{amount | currency :'EUR'}}  </span> 
+        </div>
+      </div>
+    </div>
+</div>
+
+
+ 

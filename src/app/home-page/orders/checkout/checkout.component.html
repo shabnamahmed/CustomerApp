@@ -1,0 +1,19 @@
+<p class=" h3 shadow p-3 bg-white"> {{name}}</p>
+<div class="container-fluid p-3">
+      <ul class="list-group shadow">
+        <li class="list-group-item  pt-3">
+          <span class="float-start h4">{{tableId | titlecase}}</span>
+          <span class="float-end align-middle date">{{Month}}</span>
+          </li>
+        <li class="list-group-item p-3 text-info text-center py-2">
+          <p class="h1 my-2"><b> Payment Confirmed</b></p>
+          <span class="h2">{{name}}</span>
+          <p class="h6 mt-1">{{Month}}
+            </p>
+          <p class="h2 mt-3">  {{amount | currency:'EUR' }}</p>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-checkout me-3  my-4" (click)="dashboard()">Dashboard</button>
+     <button type="button" class="btn btn-checkout ms-2 my-4" (click)="logOut()">Logout
+  </button>
+  </div>

@@ -1,0 +1,32 @@
+<p class=" h3 shadow p-3 bg-white"> {{name}}</p>
+ <div class="container-fluid  bg-light">
+         <ul class="list-group mt-3  ">
+           <li class="list-group-item  py-3">
+             <span class="col float-start h4">{{table | titlecase}}</span>
+             <span class="col float-end  date">{{Month}}</span>
+           </li>
+             <div class="scrollbar scrollbar-info" >
+              <div class="list-group-item " *ngFor="let order of orderInfo">
+              <div class="row justify-content-between py-2">
+                 <div class="col-7">
+                    <span class="row  foodName">
+                    {{order.quantities}} {{order.foodItem.name | titlecase }}</span>
+                    <span class="row  orderDate"> {{order.createdDateTime}}</span>
+                  </div> 
+                 <div class="col-auto pt-2 text-wrap">
+                  <span class="amount ">
+                    {{order.totalAmount | currency :'EUR' }}</span></div>
+                  </div>
+                </div>
+              </div>
+            <li class="list-group-item  py-3  h4">
+              <span class="float-start">Total Amount</span>
+              <span class="float-end align-middle">{{amount | currency :'EUR'}}</span>
+              </li>
+            </ul>
+         <button type="button" class="btn btn-checkout btn-block w-100 my-4" (click)="checkOut()" [disabled]="!order">Checkout</button>
+        </div>
+  
+ 
+     
+   

@@ -1,0 +1,212 @@
+.img
+{
+    padding:0;
+}
+.bs-example{
+  margin: 5 px;
+}
+.accordion{
+ 
+  font-size: 24px;
+  font-weight: bold;
+  top: 2px;
+}
+.text
+{
+  color:#313848;
+}
+
+.fa
+{
+  font-size:2rem;
+  top:0.4rem;
+  font-weight: bold;
+}
+.container
+{
+  max-width:100vw;
+}
+/* .price {
+  display: inline-block;
+} */
+
+/* .price::first-letter {
+  padding-right: 0.3em;
+} */
+
+@media  screen and (min-width:280px)  {
+  .scrollbar {
+    max-height: 40vh;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+    .scrollbarDashboard{
+      max-height: 64vh;
+      background: #fff;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }  
+}
+
+
+@media  screen and (min-width:320px)  {
+  .scrollbar {
+    max-height: 36vh;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+    .scrollbarDashboard{
+      max-height: 60vh;
+      background: #fff;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }  
+}
+
+@media  screen and (min-width:360px)  {
+  .scrollbar {
+    max-height: 45vh;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+    .scrollbarDashboard{
+      max-height: 64vh;
+      background: #fff;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+   
+}
+
+
+
+@media  screen and (min-width:375px) {
+  .scrollbar {
+    max-height: 46vh;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+    .scrollbarDashboard{
+      max-height: 65vh;
+      background: #fff;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+    @media  screen and (min-width:411px) {
+      .scrollbar {
+        max-height: 51vh;
+        background: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        }
+        .scrollbarDashboard{
+          max-height: 68vh;
+          background: #fff;
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+       
+    } 
+
+    @media  screen and (min-width:563px) and (min-height:845px) {
+      .scrollbar {
+        max-height: 38vh;
+        background: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        }
+        .scrollbarDashboard{
+          max-height: 70vh;
+          background: #fff;
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+       
+    } 
+    @media  screen and (min-width:1024px) {
+      .scrollbar {
+        max-height: 39vh;
+        background: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        }
+        .scrollbarDashboard{
+          max-height: 62vh;
+          background: #fff;
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+       
+    } 
+
+    @media  screen and (min-width:1280px) {
+      .scrollbar {
+        max-height: 53vh;
+        background: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        }
+        .scrollbarDashboard{
+          max-height: 70vh;
+          background: #fff;
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+       
+    } 
+   
+
+  
+
+@media  screen and (min-height:812px) {
+  .scrollbar {
+    max-height: 58vh;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+    .scrollbarDashboard{
+      max-height: 70vh;
+      background: #fff;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+@media  screen and (min-height:823px) {
+  .scrollbar {
+    max-height: 60vh;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+    .scrollbarDashboard{
+      max-height: 70vh;
+      background: #fff;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+  @media  screen and (min-height:1024px) {
+    .scrollbar {
+      max-height: 56vh;
+      background: #fff;
+      overflow-y: auto;
+      overflow-x: hidden;
+      }
+      .scrollbarDashboard{
+        max-height: 70vh;
+        background: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+     
+  } 
+
+  
